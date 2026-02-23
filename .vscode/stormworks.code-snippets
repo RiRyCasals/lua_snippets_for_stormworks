@@ -1,0 +1,24 @@
+{
+  "onTick": {
+    "scope": "lua",
+    "prefix": "onTick",
+    "body": [
+      "-- Tick function that will be executed every logic tick",
+      "function onTick()",
+      "  -- Your code here",
+      "end"
+    ],
+    "description": "1Tick毎に実行される関数",
+  },
+  "onDraw": {
+    "scope": "lua",
+    "prefix": "onDraw",
+    "body": [
+      "-- Draw function that will be executed when this script renders to a screen",
+      "function onDraw()",
+      "  -- Your code here",
+      "end"
+    ],
+    "description": "Luaスクリプトが画面にレンダリングされる時に実行される関数",
+  },
+}
