@@ -1,5 +1,5 @@
 // Stormworks内のLuaスクリプトで使用できる関数などを補完できるVSCode用のコードスニペット
-// .vscode/stormworks.code-snippetsに配置することで、Luaスクリプト内で補完が効くようになる（拡張子が.code-snippetsであればファイル名はなんでも良い）
+// .vscode/配下に各*.code-snipettsファイルを配置することで、Luaスクリプト内で補完が効くようになる
 // Lua標準の関数は LuaHelper Guide (https://marketplace.visualstudio.com/items?itemName=yinfei.luahelper) などの拡張機能を使用すること（不都合や要望があれば追加で記述する）
 // Luaのコーディング規約はこちらを参照すると良い (https://github.com/verve-inc/CodingStyleGuides/blob/master/Guides/Lua.md)
 {
