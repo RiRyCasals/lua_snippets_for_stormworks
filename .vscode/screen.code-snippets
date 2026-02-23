@@ -1,0 +1,20 @@
+// screenクラスに関するコードスニペット
+// オーバーロード可能な関数は「screen.関数名 : ~」のように表示されるようにする
+{
+  "screen.setColor : rgb": {
+    "scope": "lua",
+    "prefix": "screen.setColor(r, g, b)",
+    "body": [
+      "screen.setColor(${1:r}, ${2:g}, ${3:b})"
+    ],
+    "description": "描画する色を設定する。次にこの関数が呼ばれるまで設定した色は継続される。引数には赤、緑、青の順番で0-255の数値を指定する。",
+  },
+  "screen.setColor : rgba": {
+    "scope": "lua",
+    "prefix": "screen.setColor(r, g, b, a)",
+    "body": [
+      "screen.setColor(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": "描画する色と透明度を設定する。次にこの関数が呼ばれるまで設定した色と透明度は継続される。引数には赤、青、緑、透過度の順番で0-255の数値を指定する。",
+  },
+}
