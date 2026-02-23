@@ -1,5 +1,5 @@
 // screenクラスに関するコードスニペット
-// オーバーロード可能な関数は「screen.関数名 : ~」のように表示されるようにする
+// オーバーロード可能な関数は「screen.関数名 : ~」のように表示される
 {
   "screen.setColor : rgb": {
     "scope": "lua",
@@ -24,5 +24,13 @@
       "screen.drawClear($0)"
     ],
     "description": "ディスプレイ全体を現在設定されている色で塗りつぶす。",
+  },
+  "screen.drawLine": {
+    "scope": "lua",
+    "prefix": "screen.drawLine(x1, y1, x2, y2)",
+    "body": [
+      "screen.drawLine(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})"
+    ],
+    "description": "座標(x1, y1)から座標(x2, y2)に線を引く。",
   },
 }
