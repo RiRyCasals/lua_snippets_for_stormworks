@@ -17,4 +17,12 @@
     ],
     "description": "描画する色と透明度を設定する。次にこの関数が呼ばれるまで設定した色と透明度は継続される。引数には赤、青、緑、透過度の順番で0-255の数値を指定する。",
   },
+  "screen.drawClear": {
+    "scope": "lua",
+    "prefix": "screen.drawClear()",
+    "body": [
+      "screen.drawClear($0)"
+    ],
+    "description": "ディスプレイ全体を現在設定されている色で塗りつぶす。",
+  },
 }
