@@ -1,24 +1,27 @@
+// Stormworks内のLuaスクリプトで使用できる関数などを補完できるVSCode用のコードスニペット
+// .vscode/stormworks.code-snippetsに配置することで、Luaスクリプト内で補完が効くようになる（拡張子が.code-snippetsであればファイル名はなんでも良い）
+// Lua標準の関数は LuaHelper Guide (https://marketplace.visualstudio.com/items?itemName=yinfei.luahelper) などの拡張機能を使用すること（不都合や要望があれば追加で記述する）
 {
+  // 1Tick毎に実行される関数
   "onTick": {
     "scope": "lua",
     "prefix": "onTick",
     "body": [
-      "-- Tick function that will be executed every logic tick",
       "function onTick()",
       "  -- Your code here",
       "end"
     ],
-    "description": "1Tick毎に実行される関数",
+    "description": "Tick function that will be executed every logic tick",
   },
+  // Luaスクリプトが画面にレンダリングされる時に実行される関数
   "onDraw": {
     "scope": "lua",
     "prefix": "onDraw",
     "body": [
-      "-- Draw function that will be executed when this script renders to a screen",
       "function onDraw()",
       "  -- Your code here",
       "end"
     ],
-    "description": "Luaスクリプトが画面にレンダリングされる時に実行される関数",
+    "description": "Draw function that will be executed when this script renders to a screen",
   },
 }
