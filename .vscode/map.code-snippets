@@ -1,3 +1,4 @@
+// mapクラスに関するコードスニペット
 {
   "map.screenToMap": {
     "scope": "lua",
@@ -5,8 +6,17 @@
     "body": "${8:worldX}, ${9:worldY} = map.screenToMap(${1:mapX}, ${2:mapY}, ${3:zoom}, ${4:screenW}, ${5:screenH}, ${6:pixelX}, ${7:pixelY})",
     "description": [
       "ディスプレイ上の座標をワールドマップ上の座標に変換する。",
-      "【引数】mapX : マップ上のX座標, mapY : マップ上のY座標, zoom : 縮尺, screenW : スクリーンの幅, screenH : スクリーンの高さ, pixelX : スクリーン上のX座標, pixelY : スクリーン上のY座標",
-      "【戻り値】worldX : ワールドマップ上のX座標, worldY : ワールドマップ上のY座標",
+      "【引数】",
+      "    mapX : マップ上のX座標,",
+      "    mapY : マップ上のY座標,",
+      "    zoom : 縮尺,",
+      " screenW : スクリーンの幅,",
+      " screenH : スクリーンの高さ,",
+      "  pixelX : スクリーン上のX座標,",
+      "  pixelY : スクリーン上のY座標,",
+      "【戻り値】",
+      " worldX : ワールドマップ上のX座標,",
+      " worldY : ワールドマップ上のY座標,",
     ],
   },
   "map.mapToScreen": {
@@ -15,8 +25,17 @@
     "body": "${8:pixelX}, ${9:pixelY} = map.mapToScreen(${1:mapX}, ${2:mapY}, ${3:zoom}, ${4:screenW}, ${5:screenH}, ${6:worldX}, ${7:worldY})",
     "description": [
       "ワールドマップ上の座標をディスプレイ上の座標に変換する。",
-      "【引数】mapX : マップ上のX座標, mapY : マップ上のY座標, zoom : 縮尺, screenW : スクリーンの幅, screenH : スクリーンの高さ, worldX : ワールドマップ上のX座標, worldY : ワールドマップ上のY座標",
-      "【戻り値】pixelX : スクリーン上のX座標, pixelY : スクリーン上のY座標",
+      "【引数】",
+      "    mapX : マップ上のX座標,",
+      "    mapY : マップ上のY座標,",
+      "    zoom : 縮尺,",
+      " screenW : スクリーンの幅,",
+      " screenH : スクリーンの高さ,",
+      "  worldX : ワールドマップ上のX座標,",
+      "  worldY : ワールドマップ上のY座標,",
+      "【戻り値】",
+      "  pixelX : スクリーン上のX座標,",
+      "  pixelY : スクリーン上のY座標,",
     ],
   }
 }
