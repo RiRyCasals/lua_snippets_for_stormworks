@@ -65,4 +65,20 @@
     ],
     "description": "座標(x, y)を左上の角とする幅width、高さheightの長方形を塗りつぶして描画する。",
   },
+  "screen.drawTriangle": {
+    "scope": "lua",
+    "prefix": "screen.drawTriangle(x1, y1, x2, y2, x3, y3)",
+    "body": [
+      "screen.drawTriangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3})"
+    ],
+    "description": "座標(x1, y1)、(x2, y2)、(x3, y3)を頂点とする三角形を描画する。",
+  },
+  "screen.drawTriangleF": {
+    "scope": "lua",
+    "prefix": "screen.drawTriangleF(x1, y1, x2, y2, x3, y3)",
+    "body": [
+      "screen.drawTriangleF(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3})"
+    ],
+    "description": "座標(x1, y1)、(x2, y2)、(x3, y3)を頂点とする三角形を塗りつぶして描画する。",
+  },
 }
