@@ -9,6 +9,7 @@
     ],
     "description": [
       "描画する色を設定する。次にこの関数が呼ばれるまで設定した色は継続される。",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値",
       "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255",
     ],
   },
@@ -19,88 +20,111 @@
       "screen.setColor(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
-      "描画する色と透明度を設定する。次にこの関数が呼ばれるまで設定した色と透明度は継続される。",
+      "描画する色と透明度を設定する。次にこの関数が呼ばれるまで設定した色と透過度は継続される。",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, a : 透過度",
       "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
   "screen.drawClear": {
     "scope": "lua",
-    "prefix": "screen.drawClear()",
+    "prefix": "screen.drawClear",
     "body": [
-      "screen.drawClear($0)"
+      "screen.drawClear()"
     ],
     "description": "ディスプレイ全体を現在設定されている色で塗りつぶす。",
   },
   "screen.drawLine": {
     "scope": "lua",
-    "prefix": "screen.drawLine(x1, y1, x2, y2)",
+    "prefix": "screen.drawLine",
     "body": [
       "screen.drawLine(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})"
     ],
-    "description": "座標(x1, y1)から座標(x2, y2)に線を描画する。",
+    "description": [
+      "座標(x1, y1)から座標(x2, y2)に線を描画する。",
+      "【引数】x1 : 始点のX座標, y1 : 始点のY座標, x2 : 終点のX座標, y2 : 終点のY座標",
+    ],
   },
   "screen.drawCircle": {
     "scope": "lua",
-    "prefix": "screen.drawCircle(x, y, radius)",
+    "prefix": "screen.drawCircle",
     "body": [
       "screen.drawCircle(${1:x}, ${2:y}, ${3:radius})"
     ],
-    "description": "座標(x, y)を中心に半径radiusの円を描画する。",
+    "description": [
+      "座標(x, y)を中心に半径radiusの円を描画する。",
+      "【引数】x : 円の中心のX座標, y : 円の中心のY座標, radius : 円の半径",
+    ],
   },
   "screen.drawCircleF": {
     "scope": "lua",
-    "prefix": "screen.drawCircleF(x, y, radius)",
+    "prefix": "screen.drawCircleF",
     "body": [
       "screen.drawCircleF(${1:x}, ${2:y}, ${3:radius})"
     ],
-    "description": "座標(x, y)を中心に半径radiusの円を塗りつぶして描画する。",
+    "description": [
+      "座標(x, y)を中心に半径radiusの円を塗りつぶして描画する。",
+      "【引数】x : 円の中心のX座標, y : 円の中心のY座標, radius : 円の半径",
+    ],
   },
   "screen.drawRect": {
     "scope": "lua",
-    "prefix": "screen.drawRect(x, y, width, height)",
+    "prefix": "screen.drawRect",
     "body": [
       "screen.drawRect(${1:x}, ${2:y}, ${3:width}, ${4:height})"
     ],
-    "description": "座標(x, y)を左上の角とする幅width、高さheightの長方形を描画する。",
+    "description": [
+      "座標(x, y)を左上の角とする幅width、高さheightの長方形を描画する。",
+      "【引数】x : 長方形の左上のX座標, y : 長方形の左上のY座標, width : 長方形の幅, height : 長方形の高さ",
+    ],
   },
   "screen.drawRectF": {
     "scope": "lua",
-    "prefix": "screen.drawRectF(x, y, width, height)",
+    "prefix": "screen.drawRectF",
     "body": [
       "screen.drawRectF(${1:x}, ${2:y}, ${3:width}, ${4:height})"
     ],
-    "description": "座標(x, y)を左上の角とする幅width、高さheightの長方形を塗りつぶして描画する。",
+    "description": [
+      "座標(x, y)を左上の角とする幅width、高さheightの長方形を塗りつぶして描画する。",
+      "【引数】x : 長方形の左上のX座標, y : 長方形の左上のY座標, width : 長方形の幅, height : 長方形の高さ",
+    ],
   },
   "screen.drawTriangle": {
     "scope": "lua",
-    "prefix": "screen.drawTriangle(x1, y1, x2, y2, x3, y3)",
+    "prefix": "screen.drawTriangle",
     "body": [
       "screen.drawTriangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3})"
     ],
-    "description": "座標(x1, y1)、(x2, y2)、(x3, y3)を頂点とする三角形を描画する。",
+    "description": [
+      "座標(x1, y1)、(x2, y2)、(x3, y3)を頂点とする三角形を描画する。",
+      "【引数】x1 : 三角形の頂点1のX座標, y1 : 三角形の頂点1のY座標, x2 : 三角形の頂点2のX座標, y2 : 三角形の頂点2のY座標, x3 : 三角形の頂点3のX座標, y3 : 三角形の頂点3のY座標",
+    ],
   },
   "screen.drawTriangleF": {
     "scope": "lua",
-    "prefix": "screen.drawTriangleF(x1, y1, x2, y2, x3, y3)",
+    "prefix": "screen.drawTriangleF",
     "body": [
       "screen.drawTriangleF(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3})"
     ],
-    "description": "座標(x1, y1)、(x2, y2)、(x3, y3)を頂点とする三角形を塗りつぶして描画する。",
+    "description": [
+      "座標(x1, y1)、(x2, y2)、(x3, y3)を頂点とする三角形を塗りつぶして描画する。",
+      "【引数】x1 : 三角形の頂点1のX座標, y1 : 三角形の頂点1のY座標, x2 : 三角形の頂点2のX座標, y2 : 三角形の頂点2のY座標, x3 : 三角形の頂点3のX座標, y3 : 三角形の頂点3のY座標",
+    ],
   },
   "screen.drawText": {
     "scope": "lua",
-    "prefix": "screen.drawText(x, y, text)",
+    "prefix": "screen.drawText",
     "body": [
       "screen.drawText(${1:x}, ${2:y}, ${3:text})"
     ],
     "description": [
       "座標(x, y)を左上の角とするテキストを描画する。",
       "1文字につき幅4px,高さ5pxの大きさを持つ。",
+      "【引数】x : テキストの左上のX座標, y : テキストの左上のY座標, text : 描画するテキスト",
     ],
   },
   "screen.drawTextBox": {
     "scope": "lua",
-    "prefix": "screen.drawTextBox(x, y, w, h, text, h_align, v_align)",
+    "prefix": "screen.drawTextBox",
     "body": [
       "screen.drawTextBox(${1:x}, ${2:y}, ${3:w}, ${4:h}, ${5:text}, ${6:h_align}, ${7:v_align})"
     ],
@@ -108,106 +132,116 @@
       "座標(x, y)を左上の角とする幅w、高さhの矩形内にテキストを描画する。",
       "h_align,v_alignはテキストの基準位置をあらわし、この引数を省略した場合は左上が表示基準となる。",
       "テキストは短形内に収まるように自動で折り返され、それでも入り切らない場合は上下にはみ出す。",
+      "【引数】x : 短形の左上のX座標, y : 短形の左上のY座標, w : 矩形の幅, h : 矩形の高さ, text : 描画するテキスト, h_align : 水平方向の基準位置, v_align : 垂直方向の基準位置",
       "【範囲】h_align : -1 ~ 1, v_align : -1 ~ 1",
     ],
   },
   "screen.drawMap": {
     "scope": "lua",
-    "prefix": "screen.drawMap(x, y, zoom)",
+    "prefix": "screen.drawMap",
     "body": [
       "screen.drawMap(${1:x}, ${2:y}, ${3:zoom})"
     ],
     "description": [
       "座標(x, y)を中心に指定したzoomの縮尺でマップを描画する。",
+      "【引数】x : マップの中心のX座標, y : マップの中心のY座標, zoom : 縮尺",
       "【範囲】zoom : 0.1 ~ 50",
     ],
   },
   "screen.setMapColorOcean": {
     "scope": "lua",
-    "prefix": "screen.setMapColorOcean(r, g, b, a)",
+    "prefix": "screen.setMapColorOcean",
     "body": [
       "screen.setMapColorOcean(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
       "マップに描画される海の色を設定する。",
-      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, {a : 透過度}",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
   "screen.setMapColorShallows": {
     "scope": "lua",
-    "prefix": "screen.setMapColorShallows(r, g, b, a)",
+    "prefix": "screen.setMapColorShallows",
     "body": [
       "screen.setMapColorShallows(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
       "マップに描画される浅瀬の色を設定する。",
-      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, {a : 透過度}",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
   "screen.setMapColorLand": {
     "scope": "lua",
-    "prefix": "screen.setMapColorLand(r, g, b, a)",
+    "prefix": "screen.setMapColorLand",
     "body": [
       "screen.setMapColorLand(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
       "マップに描画される陸地の色を設定する。",
-      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, {a : 透過度}",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
   "screen.setMapColorGrass": {
     "scope": "lua",
-    "prefix": "screen.setMapColorGrass(r, g, b, a)",
+    "prefix": "screen.setMapColorGrass",
     "body": [
       "screen.setMapColorGrass(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
       "マップに描画される草原の色を設定する。",
-      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, {a : 透過度}",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
   "screen.setMapColorSand": {
     "scope": "lua",
-    "prefix": "screen.setMapColorSand(r, g, b, a)",
+    "prefix": "screen.setMapColorSand",
     "body": [
       "screen.setMapColorSand(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
       "マップに描画される砂地の色を設定する。",
-      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, {a : 透過度}",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
   "screen.setMapColorSnow": {
     "scope": "lua",
-    "prefix": "screen.setMapColorSnow(r, g, b, a)",
+    "prefix": "screen.setMapColorSnow",
     "body": [
       "screen.setMapColorSnow(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
       "マップに描画される雪原の色を設定する。",
-      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, {a : 透過度}",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
   "screen.setMapColorRock": {
     "scope": "lua",
-    "prefix": "screen.setMapColorRock(r, g, b, a)",
+    "prefix": "screen.setMapColorRock",
     "body": [
       "screen.setMapColorRock(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
       "マップに描画される岩の色を設定する。",
-      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, {a : 透過度}",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
   "screen.setMapColorGravel": {
     "scope": "lua",
-    "prefix": "screen.setMapColorGravel(r, g, b, a)",
+    "prefix": "screen.setMapColorGravel",
     "body": [
       "screen.setMapColorGravel(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
     "description": [
       "マップに描画される砂利の色を設定する。",
-      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+      "【引数】r : 赤の値, g : 緑の値, b : 青の値, {a : 透過度}",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
 }
