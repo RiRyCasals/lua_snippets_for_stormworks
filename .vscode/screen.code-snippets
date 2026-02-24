@@ -110,4 +110,103 @@
       "テキストは短形内に収まるように自動で折り返され、それでも入り切らない場合は上下にはみ出す。",
     ],
   },
+  "screen.drawMap": {
+    "scope": "lua",
+    "prefix": "screen.drawMap(x, y, zoom)",
+    "body": [
+      "screen.drawMap(${1:x}, ${2:y}, ${3:zoom})"
+    ],
+    "description": [
+      "座標(x, y)を中心に指定したzoomの縮尺でマップを描画する。",
+      "【範囲】zoom : 0.1 ~ 50",
+    ],
+  },
+  "screen.setMapColorOcean": {
+    "scope": "lua",
+    "prefix": "screen.setMapColorOcean(r, g, b, a)",
+    "body": [
+      "screen.setMapColorOcean(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": [
+      "マップに描画される海の色を設定する。",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+    ],
+  },
+  "screen.setMapColorShallows": {
+    "scope": "lua",
+    "prefix": "screen.setMapColorShallows(r, g, b, a)",
+    "body": [
+      "screen.setMapColorShallows(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": [
+      "マップに描画される浅瀬の色を設定する。",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+    ],
+  },
+  "screen.setMapColorLand": {
+    "scope": "lua",
+    "prefix": "screen.setMapColorLand(r, g, b, a)",
+    "body": [
+      "screen.setMapColorLand(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": [
+      "マップに描画される陸地の色を設定する。",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+    ],
+  },
+  "screen.setMapColorGrass": {
+    "scope": "lua",
+    "prefix": "screen.setMapColorGrass(r, g, b, a)",
+    "body": [
+      "screen.setMapColorGrass(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": [
+      "マップに描画される草原の色を設定する。",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+    ],
+  },
+  "screen.setMapColorSand": {
+    "scope": "lua",
+    "prefix": "screen.setMapColorSand(r, g, b, a)",
+    "body": [
+      "screen.setMapColorSand(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": [
+      "マップに描画される砂地の色を設定する。",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+    ],
+  },
+  "screen.setMapColorSnow": {
+    "scope": "lua",
+    "prefix": "screen.setMapColorSnow(r, g, b, a)",
+    "body": [
+      "screen.setMapColorSnow(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": [
+      "マップに描画される雪原の色を設定する。",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+    ],
+  },
+  "screen.setMapColorRock": {
+    "scope": "lua",
+    "prefix": "screen.setMapColorRock(r, g, b, a)",
+    "body": [
+      "screen.setMapColorRock(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": [
+      "マップに描画される岩の色を設定する。",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+    ],
+  },
+  "screen.setMapColorGravel": {
+    "scope": "lua",
+    "prefix": "screen.setMapColorGravel(r, g, b, a)",
+    "body": [
+      "screen.setMapColorGravel(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+    ],
+    "description": [
+      "マップに描画される砂利の色を設定する。",
+      "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a(任意) : 0 ~ 255",
+    ],
+  },
 }
