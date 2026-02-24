@@ -49,4 +49,20 @@
     ],
     "description": "座標(x, y)を中心に半径radiusの円を塗りつぶして描画する。",
   },
+  "screen.drawRect": {
+    "scope": "lua",
+    "prefix": "screen.drawRect(x, y, width, height)",
+    "body": [
+      "screen.drawRect(${1:x}, ${2:y}, ${3:width}, ${4:height})"
+    ],
+    "description": "座標(x, y)を左上の角とする幅width、高さheightの長方形を描画する。",
+  },
+  "screen.drawRectF": {
+    "scope": "lua",
+    "prefix": "screen.drawRectF(x, y, width, height)",
+    "body": [
+      "screen.drawRectF(${1:x}, ${2:y}, ${3:width}, ${4:height})"
+    ],
+    "description": "座標(x, y)を左上の角とする幅width、高さheightの長方形を塗りつぶして描画する。",
+  },
 }
