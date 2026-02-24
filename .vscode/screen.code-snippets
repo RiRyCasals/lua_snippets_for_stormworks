@@ -7,7 +7,10 @@
     "body": [
       "screen.setColor(${1:r}, ${2:g}, ${3:b})"
     ],
-    "description": "描画する色を設定する。次にこの関数が呼ばれるまで設定した色は継続される。引数には赤、緑、青の順番で0-255の数値を指定する。",
+    "description": [
+      "描画する色を設定する。次にこの関数が呼ばれるまで設定した色は継続される。",
+      "引数には赤、緑、青の順番で0-255の数値を指定する。",
+    ],
   },
   "screen.setColor : rgba": {
     "scope": "lua",
@@ -15,7 +18,10 @@
     "body": [
       "screen.setColor(${1:r}, ${2:g}, ${3:b}, ${4:a})"
     ],
-    "description": "描画する色と透明度を設定する。次にこの関数が呼ばれるまで設定した色と透明度は継続される。引数には赤、青、緑、透過度の順番で0-255の数値を指定する。",
+    "description": [
+      "描画する色と透明度を設定する。次にこの関数が呼ばれるまで設定した色と透明度は継続される。",
+      "引数には赤、青、緑、透過度の順番で0-255の数値を指定する。",
+    ],
   },
   "screen.drawClear": {
     "scope": "lua",
@@ -80,5 +86,28 @@
       "screen.drawTriangleF(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3})"
     ],
     "description": "座標(x1, y1)、(x2, y2)、(x3, y3)を頂点とする三角形を塗りつぶして描画する。",
+  },
+  "screen.drawText": {
+    "scope": "lua",
+    "prefix": "screen.drawText(x, y, text)",
+    "body": [
+      "screen.drawText(${1:x}, ${2:y}, ${3:text})"
+    ],
+    "description": [
+      "座標(x, y)を左上の角とするテキストを描画する。",
+      "1文字につき幅4px,高さ5pxの大きさを持つ。",
+    ],
+  },
+  "screen.drawTextBox": {
+    "scope": "lua",
+    "prefix": "screen.drawTextBox(x, y, w, h, text, h_align, v_align)",
+    "body": [
+      "screen.drawTextBox(${1:x}, ${2:y}, ${3:w}, ${4:h}, ${5:text}, ${6:h_align}, ${7:v_align})"
+    ],
+    "description": [
+      "座標(x, y)を左上の角とする幅w、高さhの矩形内にテキストを描画する。",
+      "h_align,v_alignはテキストの基準位置をあらわし、範囲は -1 ~ 1 である。この引数を省略した場合は左上が表示基準となる。",
+      "テキストは短形内に収まるように自動で折り返され、それでも入り切らない場合は上下にはみ出す。",
+    ],
   },
 }
