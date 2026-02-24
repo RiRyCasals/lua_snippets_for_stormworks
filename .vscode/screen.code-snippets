@@ -244,4 +244,26 @@
       "【範囲】r : 0 ~ 255, g : 0 ~ 255, b : 0 ~ 255, a : 0 ~ 255",
     ],
   },
+  "screen.getWidth": {
+    "scope": "lua",
+    "prefix": "screen.getWidth",
+    "body": [
+      "width = screen.getWidth()"
+    ],
+    "description": [
+      "スクリーンの幅を取得する。",
+      "【戻り値】width : スクリーンの幅",
+    ],
+  },
+  "screen.getHeight": {
+    "scope": "lua",
+    "prefix": "screen.getHeight",
+    "body": [
+      "height = screen.getHeight()"
+    ],
+    "description": [
+      "スクリーンの高さを取得する。",
+      "【戻り値】height : スクリーンの高さ",
+    ],
+  },
 }
