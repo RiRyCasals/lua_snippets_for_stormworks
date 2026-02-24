@@ -31,6 +31,22 @@
     "body": [
       "screen.drawLine(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})"
     ],
-    "description": "座標(x1, y1)から座標(x2, y2)に線を引く。",
+    "description": "座標(x1, y1)から座標(x2, y2)に線を描画する。",
+  },
+  "screen.drawCircle": {
+    "scope": "lua",
+    "prefix": "screen.drawCircle(x, y, radius)",
+    "body": [
+      "screen.drawCircle(${1:x}, ${2:y}, ${3:radius})"
+    ],
+    "description": "座標(x, y)を中心に半径radiusの円を描画する。",
+  },
+  "screen.drawCircleF": {
+    "scope": "lua",
+    "prefix": "screen.drawCircleF(x, y, radius)",
+    "body": [
+      "screen.drawCircleF(${1:x}, ${2:y}, ${3:radius})"
+    ],
+    "description": "座標(x, y)を中心に半径radiusの円を塗りつぶして描画する。",
   },
 }
