@@ -1,0 +1,6 @@
+{
+  // 拡張機能 LuaHelper Guide (https://marketplace.visualstudio.com/items?itemName=yinfei.luahelper) を入れている場合に上書きされるフォーマット設定
+  // stormworks内のLuaスクリプトでは文字数制限があるため、意図的にインデントをスペースではなくタブにする
+  "luahelper.format.use_tab": true,
+  "luahelper.format.indent_width": 1,
+}

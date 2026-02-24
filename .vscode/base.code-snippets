@@ -8,7 +8,7 @@
     "prefix": "onTick",
     "body": [
       "function onTick()",
-      "    $0",
+      "  $0",
       "end"
     ],
     "description": "1Tick毎に実行される関数。",
@@ -18,7 +18,7 @@
     "prefix": "onDraw",
     "body": [
       "function onDraw()",
-      "    $0",
+      "  $0",
       "end"
     ],
     "description": "Luaスクリプトが画面にレンダリングされる時に実行される関数。複数の映像信号を出力するマイクロコントローラーの場合は接続した枚数分だけ実行される。",

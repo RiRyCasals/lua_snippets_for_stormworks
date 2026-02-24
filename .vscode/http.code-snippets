@@ -21,7 +21,7 @@
     "prefix": "httpReply",
     "body": [
       "function httpReply(${1:port}, ${2:request_body}, ${3:response_body})",
-      "    $0",
+      "  $0",
       "end"
     ],
     "description": [
