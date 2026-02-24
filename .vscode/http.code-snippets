@@ -1,0 +1,35 @@
+// http通信に関するスニペット
+//TODO:（優先度：低）説明や使用例などを追加する
+{
+  "async.httpGet": {
+    "scope": "lua",
+    "prefix": "async.httpGet",
+    "body": [
+      "async.httpGet(${1:port}, ${2:path})"
+    ],
+    "description": [
+      "非同期でHTTP GETリクエストを送信する。",
+      "【引数】",
+      " port : ポート番号,",
+      " path : リクエストのパス",
+      "【使用例】",
+      " async.httpGet(80, \"/set_light_mode?index=1&mode=3\")",
+    ],
+  },
+  "httpReply": {
+    "scope": "lua",
+    "prefix": "httpReply",
+    "body": [
+      "function httpReply(${1:port}, ${2:request_body}, ${3:response_body})",
+      "    $0",
+      "end"
+    ],
+    "description": [
+      "HTTPリクエストに対する返信が受信されたときに自動的にトリガーされるコールバック関数。",
+      "【引数】",
+      " port : ポート番号,",
+      " request_body : リクエストの内容,",
+      " response_body : 返信の内容",
+    ],
+  },
+}
