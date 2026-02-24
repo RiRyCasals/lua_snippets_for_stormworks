@@ -382,7 +382,7 @@
     "scope": "lua",
     "prefix": "screen.getWidth",
     "body": [
-      "width = screen.getWidth()"
+      "screen.getWidth()"
     ],
     "description": [
       "スクリーンの幅を取得する。",
@@ -394,7 +394,7 @@
     "scope": "lua",
     "prefix": "screen.getHeight",
     "body": [
-      "height = screen.getHeight()"
+      "screen.getHeight()"
     ],
     "description": [
       "スクリーンの高さを取得する。",
