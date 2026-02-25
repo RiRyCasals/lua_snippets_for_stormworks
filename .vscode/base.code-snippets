@@ -5,7 +5,7 @@
 {
   "onTick": {
     "scope": "lua",
-    "prefix": "onTick",
+    "prefix": "function onTick",
     "body": [
       "function onTick()",
       "  $0",
@@ -15,7 +15,7 @@
   },
   "onDraw": {
     "scope": "lua",
-    "prefix": "onDraw",
+    "prefix": "function onDraw",
     "body": [
       "function onDraw()",
       "  $0",
